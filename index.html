@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Conflux - 14</title>
+    <title>Conflux - The Confluence client for your iPad</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- @todo: fill with your company info or remove -->
-    <meta name="description" content="">
-    <meta name="author" content="Themelize.me">
+    <meta name="description" content="Conflux, the confluence client for your iPad">
 
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -75,8 +73,8 @@
 <div id="content">
 	<div class="container">
 		<!-- Newsletter subscription form-->
-		<a name="signup"/>
-		<div class="row-fluid row-fluid-70 signup-form">
+		<a name="signup"></a>
+		<!-- <div class="row-fluid row-fluid-70 signup-form">
 			<form class="form-bloat form-stretch">
 				<div class="input-append">
 					<input type="text" placeholder="Get Updates via email.">
@@ -84,7 +82,27 @@
 				</div>
 			</form>
 			<p class="muted">Enter your email address to get updates from us.</p>
+		</div> -->
+		
+		<div id="mc_embed_signup" class="row-fluid row-fluid-70 signup-form">
+			<form action="http://confluxapp.us3.list-manage1.com/subscribe/post?u=af25611950966ff332669e54d&amp;id=2a4788a64f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-bloat form-stretch" target="_blank" novalidate>
+				<div class="mc-field-group input-append">
+					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Get Updates via email.">
+					<input type="submit" value="Go!" name="subscribe" id="mc-embedded-subscribe" class="button btn">
+				</div>
+				 
+				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			  <div style="position: absolute; left: -5000px;"><input type="text" name="b_af25611950966ff332669e54d_2a4788a64f" value=""></div>
+				
+			</form>
+			<div class="muted" id="mce-hint" style="">Enter your email address to get updates from us.</div>
+			<div id="mce-responses" class="clear">
+				<div class="response" id="mce-error-response" style="display:none"></div>
+				<div class="response" id="mce-success-response" style="display:none"></div>
+			</div>
+			<p class="muted"></p>
 		</div>
+		
 	  
 	</div>
 </div>
@@ -138,6 +156,7 @@
     <script src="js/script.js"></script>
 		<script src="js/jquery.email-antispam.js"></script>
 		<script src="js/ga.js"></script>
+		<script src="js/mailchimp.js"></script>
 		<script type="text/javascript">
 		  // Google Analytics
 		  ga('create', 'UA-48804200-1', 'www.confluxapp.net');
