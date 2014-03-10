@@ -1610,6 +1610,7 @@ input[type="checkbox"][readonly] {
   border-color: #3a87ad;
 }
 
+/*
 input:focus:invalid,
 textarea:focus:invalid,
 select:focus:invalid {
@@ -1624,7 +1625,9 @@ select:focus:invalid:focus {
   -webkit-box-shadow: 0 0 6px #f8b9b7;
      -moz-box-shadow: 0 0 6px #f8b9b7;
           box-shadow: 0 0 6px #f8b9b7;
+
 }
+*/
 
 .form-actions {
   padding: 19px 20px 20px;
