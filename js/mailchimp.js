@@ -146,10 +146,16 @@ function mce_success_cb(resp){
     $('#mce-success-response').hide();
     $('#mce-error-response').hide();
     if (resp.result=="success"){
-        $('#mce-'+resp.result+'-response').show();
-        $('#mce-'+resp.result+'-response').html(resp.msg);
-        $('#mc-embedded-subscribe-form').each(function(){
-            this.reset();
+      var email = $('#mce-EMAIL').val();
+      mixpanel.track('Newsletter signup', {
+			  'email': email
+			});
+
+      
+      $('#mce-'+resp.result+'-response').show();
+      $('#mce-'+resp.result+'-response').html(resp.msg);
+      $('#mc-embedded-subscribe-form').each(function(){
+          this.reset();
     	});
     } else {
         var index = -1;
